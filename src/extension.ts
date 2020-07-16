@@ -1,7 +1,7 @@
 "use strict";
 
 import * as vscode from "vscode";
-import { markdownToAtlassianWikiMarkup } from "@kenchan0130/markdown-to-atlassian-wiki-markup";
+import { markdownToAtlassianWikiMarkup } from "./index";
 
 export function activate(context: vscode.ExtensionContext) {
   const disposable = vscode.commands.registerCommand(
