@@ -1,7 +1,7 @@
 {
   "name": "md2confl-vscode",
   "displayName": "Markdown to confluence for VSCode",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "VScode extension for convert markdown to confluence(atlassian wiki markup)",
   "main": "./out/extension",
   "scripts": {
@@ -60,14 +60,21 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.md2confl.convert",
-		"onWebviewPanel:extension.md2confl.result"
+    "onCommand:extension.md2confl.convert2Clipboard",
+    "onCommand:extension.md2confl.convert2Window",
+    "onWebviewPanel:extension.md2confl.result"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "extension.md2confl.convert",
+        "command": "extension.md2confl.convert2Clipboard",
+        "category": "md2confl",
         "title": "Convert markdown to confluence(atlassian wiki markup) and Copy to clipboard"
+      },
+      {
+        "command": "extension.md2confl.convert2Window",
+        "category": "md2confl",
+        "title": "Convert markdown to confluence(atlassian wiki markup) and Open window"
       }
     ]
   },

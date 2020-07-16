@@ -4,26 +4,21 @@ import * as vscode from "vscode";
 import { markdownToAtlassianWikiMarkup } from "./index";
 
 export function activate(context: vscode.ExtensionContext) {
-  const disposable = vscode.commands.registerCommand(
-    "extension.md2confl.convert",
-    function () {
-      // Get the active text editor
-      const editor = vscode.window.activeTextEditor;
-
-      if (editor) {
-        const document = editor.document;
-
-        // Get the all words
-        const content = document.getText();
-        const wikiMarkup = markdownToAtlassianWikiMarkup(content);
-        // const escapedContents = encodeURIComponent(wikiMarkup);
-        vscode.env.clipboard.writeText(wikiMarkup);
-        ConvertedPanel.createOrShow(context.extensionPath, wikiMarkup);
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      "extension.md2confl.convert2Clipboard",
+      () => {
+        vscode.env.clipboard.writeText(getActiveText());
+        vscode.window.showInformationMessage("md2confl: Copied!!");
       }
-    }
+    )
   );
 
-  context.subscriptions.push(disposable);
+  context.subscriptions.push(
+    vscode.commands.registerCommand("extension.md2confl.convert2Window", () =>
+      ConvertedPanel.createOrShow(context.extensionPath, getActiveText())
+    )
+  );
 
   if (vscode.window.registerWebviewPanelSerializer) {
     // Make sure we register a serializer in activation event
@@ -39,6 +34,22 @@ export function activate(context: vscode.ExtensionContext) {
   }
 }
 
+function getActiveText(): string {
+  // Get the active text editor
+  const editor = vscode.window.activeTextEditor;
+
+  if (editor) {
+    const document = editor.document;
+
+    // Get the all words
+    const content = document.getText();
+    const wikiMarkup = markdownToAtlassianWikiMarkup(content);
+
+    return wikiMarkup;
+  }
+  return "";
+}
+
 /**
  * Manages converted webview panels
  */
@@ -48,7 +59,7 @@ class ConvertedPanel {
    */
   public static currentPanel: ConvertedPanel | undefined;
 
-  public static readonly viewType = "md2conful";
+  public static readonly viewType = "md2confl";
 
   private readonly _panel: vscode.WebviewPanel;
   private readonly _extensionPath: string;
