@@ -4,5 +4,6 @@
       "directory": "./test-project",
       "changeProcessCWD": true
     }
-  ]
+  ],
+  "editor.insertSpaces": false
 }

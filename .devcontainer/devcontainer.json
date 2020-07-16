@@ -1,26 +1,32 @@
 {
-  "name": "Node.js",
+  "name": "markdown2confluence",
   "build": {
     "dockerfile": "base.Dockerfile",
     // Update 'VARIANT' to pick a Node version. Rebuild the container
     // if it already exists to update. Available variants: 10, 12, 14
-    "args": { "VARIANT": "14" }
+    "args": {
+      "VARIANT": "14"
+    }
   },
-
   // Set *default* container specific settings.json values on container create.
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
-
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": ["dbaeumer.vscode-eslint"]
-
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "Compulim.vscode-clock",
+    "eamodio.gitlens",
+    "GitHub.vscode-pull-request-github",
+    "ms-azuretools.vscode-docker",
+    "shardulm94.trailing-spaces",
+    "redhat.vscode-yaml",
+    "esbenp.prettier-vscode"
+  ]
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
-
   // Use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": "yarn install",
-
   // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
   // "remoteUser": "node"
 }
