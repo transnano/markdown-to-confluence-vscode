@@ -1,7 +1,8 @@
 {
-  "name": "md2confl-vscode",
-  "displayName": "Markdown to confluence for VSCode",
-  "version": "0.0.4",
+  "name": "markdown-to-confluence-vscode",
+  "displayName": "Markdown to confluence for VSCode Extension",
+  "version": "0.0.5",
+  "publisher": "transnano",
   "description": "VScode extension for convert markdown to confluence(atlassian wiki markup)",
   "main": "./out/extension",
   "scripts": {
@@ -30,7 +31,7 @@
     "@typescript-eslint/parser": "^3.6.1",
     "eslint": "^7.4.0",
     "jest": "^26.1.0",
-    "typescript": "^3.9.6",
+    "typescript": "^3.9.7",
     "@types/array-unique": "^0.3.0",
     "array-unique": "^0.3.2",
     "eslint-config-prettier": "^6.5.0",
@@ -39,7 +40,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.2",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.1.2"
+    "ts-jest": "^26.1.3"
   },
   "jest": {
     "preset": "ts-jest"
@@ -51,7 +52,9 @@
   "keywords": [
     "markdown",
     "confluence",
-    "convert"
+    "convert",
+    "atlassian",
+    "wiki"
   ],
   "engines": {
     "vscode": "^1.47.0"
@@ -69,12 +72,12 @@
       {
         "command": "extension.md2confl.convert2Clipboard",
         "category": "md2confl",
-        "title": "Convert markdown to confluence(atlassian wiki markup) and Copy to clipboard"
+        "title": "Convert markdown to confluence and Copy to clipboard"
       },
       {
         "command": "extension.md2confl.convert2Window",
         "category": "md2confl",
-        "title": "Convert markdown to confluence(atlassian wiki markup) and Open window"
+        "title": "Convert markdown to confluence and Open window"
       }
     ]
   },
