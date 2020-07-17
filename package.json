@@ -1,7 +1,7 @@
 {
   "name": "markdown-to-confluence-vscode",
   "displayName": "Markdown to confluence for VSCode Extension",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "transnano",
   "description": "VScode extension for convert markdown to confluence(atlassian wiki markup)",
   "main": "./out/extension",
@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/transnano/markdown-to-confluence-sample.git"
+    "url": "git+https://github.com/transnano/markdown-to-confluence-vscode.git"
   },
   "keywords": [
     "markdown",
@@ -84,7 +84,7 @@
   "author": "Transnano <transnano.jp@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/transnano/markdown-to-confluence-sample/issues"
+    "url": "https://github.com/transnano/markdown-to-confluence-vscode/issues"
   },
-  "homepage": "https://github.com/transnano/markdown-to-confluence-sample#readme"
+  "homepage": "https://github.com/transnano/markdown-to-confluence-vscode#readme"
 }
