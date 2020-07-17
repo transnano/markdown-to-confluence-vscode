@@ -21,7 +21,8 @@
     "ms-azuretools.vscode-docker",
     "shardulm94.trailing-spaces",
     "redhat.vscode-yaml",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "cschleiden.vscode-github-actions"
   ]
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
