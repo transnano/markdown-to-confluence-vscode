@@ -1,0 +1,13 @@
+{
+  "extends": ["config:base"],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["before 10am every weekday"],
+  "labels": ["renovate"],
+  "patch": { "automerge": true },
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "automerge": true
+    }
+  ]
+}
