@@ -30,7 +30,7 @@
     "@typescript-eslint/eslint-plugin": "3.7.1",
     "@typescript-eslint/parser": "3.7.1",
     "eslint": "7.5.0",
-    "jest": "26.1.0",
+    "jest": "26.2.1",
     "typescript": "3.9.7",
     "@types/array-unique": "0.3.0",
     "array-unique": "0.3.2",
