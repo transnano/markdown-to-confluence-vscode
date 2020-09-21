@@ -1,0 +1,27 @@
+name: Test and Lint
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: yarn install
+        run: yarn install
+      - name: eslint review
+        uses: reviewdog/action-eslint@v1
+        with:
+          github_token: ${{ secrets.TestAndLintToken }}
+          reporter: github-pr-review
+          eslint_flags: "src/**/*.ts"
+      - name: Run eslint
+        run: yarn lint
+      - name: Run Jest
+        run: yarn jest

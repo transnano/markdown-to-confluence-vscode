@@ -3,7 +3,7 @@ name: Deploy VSCode Extension to VSCE
 on:
   push:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - "v[0-9]+.[0-9]+.[0-9]+"
 
 jobs:
   publish-vsce:
@@ -13,6 +13,6 @@ jobs:
       - run: npm install
       - uses: lannonbr/vsce-action@master
         with:
-          args: 'publish -p $VSCE_TOKEN'
+          args: "publish -p $VSCE_TOKEN"
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
