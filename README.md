@@ -2,6 +2,8 @@
 
 [![](https://vsmarketplacebadge.apphb.com/version/t-nano.markdown-to-confluence-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=t-nano.markdown-to-confluence-vscode) [![Rating](https://vsmarketplacebadge.apphb.com/rating-short/t-nano.markdown-to-confluence-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=t-nano.markdown-to-confluence-vscode) [![Installs](https://vsmarketplacebadge.apphb.com/installs/t-nano.markdown-to-confluence-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=t-nano.markdown-to-confluence-vscode)
 
+![Test and Lint](https://github.com/transnano/markdown-to-confluence-vscode/workflows/Test%20and%20Lint/badge.svg)
+
 ## Features
 
 Convert markdown to confluence(atlassian wiki markup).
