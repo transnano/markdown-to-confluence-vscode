@@ -3,11 +3,12 @@
   "timezone": "Asia/Tokyo",
   "schedule": ["before 10am every weekday"],
   "labels": ["renovate"],
-  "patch": { "automerge": true },
+  "patch": { "automerge": true, "automergeType": "branch" },
   "packageRules": [
     {
       "depTypeList": ["devDependencies"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
     }
   ]
 }
