@@ -40,9 +40,11 @@ function getActiveText(): string {
 
   if (editor) {
     const document = editor.document;
+    const selection = editor.selection;
 
-    // Get the all words
-    const content = document.getText();
+    const content = selection.isEmpty
+      ? document.getText()
+      : document.getText(selection);
     const wikiMarkup = markdownToAtlassianWikiMarkup(content);
 
     return wikiMarkup;
