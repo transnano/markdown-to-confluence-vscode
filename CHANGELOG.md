@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "markdown-to-confluence-vscode" extension will be documented in this file.
 
+## [0.0.8]
+- Editor selection.
+- Release v0.0.8 :tada:
+
 ## [0.0.7]
 - Changed publisher name.
 - Release v0.0.7 :tada:
