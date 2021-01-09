@@ -79,7 +79,38 @@
         "category": "md2confl",
         "title": "Convert markdown to confluence and Open window"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Markdown to Confluence",
+      "properties": {
+        "md2confl.codeBlock.theme": {
+          "type": "string",
+          "enum": [
+            "DJango",
+            "Emacs",
+            "FadeToGrey",
+            "Midnight",
+            "RDark",
+            "Eclipse",
+            "Confluence"
+          ],
+          "default": "Confluence",
+          "description": "Specifies the color scheme used for displaying your code block",
+          "scope": "resource"
+        },
+        "md2confl.codeBlock.showLineNumbers": {
+          "type": "boolean",
+          "default": true,
+          "description": "If selected, line numbers will be shown to the left of the lines of code"
+        },
+        "md2confl.codeBlock.collapse": {
+          "type": "boolean",
+          "default": false,
+          "description": "If selected, the code macro's content will be collapsed upon visiting or refreshing the Confluence page"
+        }
+      }
+    }
   },
   "author": "Transnano <transnano.jp@gmail.com>",
   "license": "MIT",

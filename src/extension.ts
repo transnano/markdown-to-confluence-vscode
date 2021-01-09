@@ -38,6 +38,10 @@ export function activate(context: vscode.ExtensionContext) {
   }
 }
 
+function getWorkspace(): vscode.WorkspaceConfiguration {
+  return vscode.workspace.getConfiguration("md2confl");
+}
+
 function getActiveText(): string {
   // Get the active text editor
   const editor = vscode.window.activeTextEditor;
@@ -49,11 +53,19 @@ function getActiveText(): string {
     const content = selection.isEmpty
       ? document.getText()
       : document.getText(selection);
+
+    const myConfig = getWorkspace();
+    const theme = myConfig.get("codeBlock.theme", "Confluence");
+    const showLineNumbers: boolean = myConfig.get(
+      "codeBlock.showLineNumbers",
+      true
+    );
+    const collapse: boolean = myConfig.get("codeBlock.collapse", false);
     const options: MarkdownToAtlassianWikiMarkupOptions = {
       codeBlock: {
-        theme: "Confluence",
-        showLineNumbers: true,
-        collapse: false,
+        theme: theme,
+        showLineNumbers: showLineNumbers,
+        collapse: collapse,
       },
     };
     const wikiMarkup = markdownToAtlassianWikiMarkup(content, options);
