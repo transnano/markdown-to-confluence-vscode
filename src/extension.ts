@@ -1,7 +1,11 @@
 "use strict";
 
 import * as vscode from "vscode";
-import { markdownToAtlassianWikiMarkup } from "./index";
+import {
+  markdownToAtlassianWikiMarkup,
+  MarkdownToAtlassianWikiMarkupOptions,
+  CodeBlockTheme,
+} from "./index";
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
@@ -45,7 +49,14 @@ function getActiveText(): string {
     const content = selection.isEmpty
       ? document.getText()
       : document.getText(selection);
-    const wikiMarkup = markdownToAtlassianWikiMarkup(content);
+    const options: MarkdownToAtlassianWikiMarkupOptions = {
+      codeBlock: {
+        theme: "Confluence",
+        showLineNumbers: true,
+        collapse: false,
+      },
+    };
+    const wikiMarkup = markdownToAtlassianWikiMarkup(content, options);
 
     return wikiMarkup;
   }
