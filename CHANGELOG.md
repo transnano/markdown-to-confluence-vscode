@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "markdown-to-confluence-vscode" extension will be documented in this file.
 
+## [0.0.9]
+- Display the line number of the code block.
+- Release v0.0.9 :tada:
+
 ## [0.0.8]
 - Editor selection.
 - Release v0.0.8 :tada:
