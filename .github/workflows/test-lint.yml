@@ -2,7 +2,7 @@ name: Test and Lint
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:

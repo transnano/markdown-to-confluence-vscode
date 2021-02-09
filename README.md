@@ -76,7 +76,7 @@ Specifies the color scheme used for displaying your code block.
 
 Update infomation.
 
-Ref: [CHANGELOG.md](https://github.com/transnano/markdown-to-confluence-vscode/blob/master/CHANGELOG.md)
+Ref: [CHANGELOG.md](https://github.com/transnano/markdown-to-confluence-vscode/blob/main/CHANGELOG.md)
 
 ## Special thanks
 
