@@ -23,7 +23,8 @@
     "shardulm94.trailing-spaces",
     "redhat.vscode-yaml",
     "esbenp.prettier-vscode",
-    "cschleiden.vscode-github-actions"
+    "cschleiden.vscode-github-actions",
+    "vtrois.gitmoji-vscode"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
