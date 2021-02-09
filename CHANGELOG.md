@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "markdown-to-confluence-vscode" extension will be documented in this file.
 
+## [0.1.1]
+- Security updates.
+- Release v0.1.1 :tada:
+
 ## [0.1.0]
 - Save code block settings.
 - Release v0.1.0 :tada:
