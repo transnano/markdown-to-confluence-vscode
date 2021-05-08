@@ -13,7 +13,7 @@ export function activate(context: vscode.ExtensionContext) {
       "extension.md2confl.convert2Clipboard",
       () => {
         vscode.env.clipboard.writeText(getActiveText());
-        vscode.window.showInformationMessage("md2confl: Copied!!");
+        vscode.window.setStatusBarMessage("md2confl: Copied!!", 5000);
       }
     )
   );
