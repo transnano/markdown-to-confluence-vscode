@@ -10,11 +10,16 @@ Convert markdown to confluence(atlassian wiki markup).
 
 From:
 
-```markdown
+````markdown
 # Convert markdown to confluence(atlassian wiki markup) for VSCode Extension
 Repository
 [transnano/markdown-to-confluence-vscode](https://github.com/transnano/markdown-to-confluence-vscode)
+
+```sh
+$ echo 'hello'
+hello
 ```
+````
 
 To:
 
@@ -23,6 +28,11 @@ h1. Convert markdown to confluence(atlassian wiki markup) for VSCode Extension
 
 Repository
 [transnano/markdown-to-confluence-vscode|https://github.com/transnano/markdown-to-confluence-vscode]
+
+{code:collapse=false|language=bash|linenumbers=true|theme=Confluence}
+$ echo 'hello'
+hello
+{code}
 ```
 
 ## Command (Usage)
