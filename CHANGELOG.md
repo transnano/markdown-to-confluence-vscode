@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "markdown-to-confluence-vscode" extension will be documented in this file.
 
+## [0.1.4]
+- Update dependencies.
+- Release v0.1.4 :tada:
+
 ## [0.1.3]
 - Changed to display a message in the status bar.
 - Release v0.1.3 :tada:
