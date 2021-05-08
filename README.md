@@ -80,6 +80,6 @@ Ref: [CHANGELOG.md](https://github.com/transnano/markdown-to-confluence-vscode/b
 
 ## Special thanks
 
-[kenchan0130/markdown-to-atlassian-wiki-markup: Convert markdown to atlassian wiki markup - v3.0.6](https://github.com/kenchan0130/markdown-to-atlassian-wiki-markup) that is released under the MIT License, see [LICENSE](https://github.com/kenchan0130/markdown-to-atlassian-wiki-markup/blob/v3.0.6/LICENSE).
+[kenchan0130/markdown-to-atlassian-wiki-markup: Convert markdown to atlassian wiki markup - v4.0.1](https://github.com/kenchan0130/markdown-to-atlassian-wiki-markup/tree/v4.0.1) that is released under the MIT License, see [LICENSE](https://github.com/kenchan0130/markdown-to-atlassian-wiki-markup/blob/v4.0.1/LICENSE).
 
-forked it and extend checkbox for list-item.
+~~forked it and extend checkbox for list-item.~~
