@@ -6,7 +6,7 @@
   "patch": { "automerge": true, "automergeType": "branch" },
   "packageRules": [
     {
-      "depTypeList": ["devDependencies"],
+      "depTypeList": ["dependencies", "devDependencies"],
       "automerge": true,
       "automergeType": "branch"
     }
