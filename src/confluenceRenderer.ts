@@ -26,20 +26,10 @@ import { Renderer, Slugger } from "marked";
 
 import {
   AtlassianSupportLanguage,
-  AtlassianSupportLanguageValues,
   markdownToWikiMarkupLanguageMapping,
 } from "./language";
 
-type CodeBlockTheme = {
-  DJango: "DJango";
-  Emacs: "Emacs";
-  FadeToGrey: "FadeToGrey";
-  Midnight: "Midnight";
-  RDark: "RDark";
-  Eclipse: "Eclipse";
-  Confluence: "Confluence";
-};
-export const CodeBlockTheme: CodeBlockTheme = {
+export const CodeBlockTheme = {
   DJango: "DJango",
   Emacs: "Emacs",
   FadeToGrey: "FadeToGrey",
@@ -47,18 +37,18 @@ export const CodeBlockTheme: CodeBlockTheme = {
   RDark: "RDark",
   Eclipse: "Eclipse",
   Confluence: "Confluence",
-};
-export type CodeBlockThemeValues = CodeBlockTheme[keyof CodeBlockTheme];
+} as const;
+type CodeBlockTheme = typeof CodeBlockTheme[keyof typeof CodeBlockTheme];
 
 export type MarkdownToAtlassianWikiMarkupOptions = {
   codeBlock?: {
-    theme?: CodeBlockThemeValues;
+    theme?: CodeBlockTheme;
     showLineNumbers?:
       | boolean
-      | ((code: string, lang: AtlassianSupportLanguageValues) => boolean);
+      | ((code: string, lang: AtlassianSupportLanguage) => boolean);
     collapse?:
       | boolean
-      | ((code: string, lang: AtlassianSupportLanguageValues) => boolean);
+      | ((code: string, lang: AtlassianSupportLanguage) => boolean);
   };
 };
 
@@ -106,7 +96,7 @@ const unescapeHtmlSpecialCharacteres = (text: string): string => {
       }
 
       if (lowered === "quot") {
-        return "\"";
+        return '"';
       }
 
       if (lowered.charAt(0) === "#" && lowered.charAt(1) === "x") {
@@ -203,10 +193,7 @@ export class AtlassianWikiMarkupRenderer extends Renderer {
 
   public checkbox(_checked: boolean): string {
     // Confluence wiki does not support checkbox.
-    if (_checked) {
-      return `<input type="checkbox" disabled="" checked=""> `;
-    }
-    return `<input type="checkbox" disabled=""> `;
+    return "";
   }
 
   public image(href: string, title: string | null, text: string): string {

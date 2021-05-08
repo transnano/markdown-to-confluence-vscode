@@ -32,13 +32,9 @@ export {
   AtlassianWikiMarkupRenderer,
   MarkdownToAtlassianWikiMarkupOptions,
   CodeBlockTheme,
-  CodeBlockThemeValues,
 } from "./confluenceRenderer";
 
-export {
-  AtlassianSupportLanguage,
-  AtlassianSupportLanguageValues,
-} from "./language";
+export { AtlassianSupportLanguage } from "./language";
 
 export const markdownToAtlassianWikiMarkup = (
   markdown: string,
