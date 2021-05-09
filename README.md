@@ -10,11 +10,16 @@ Convert markdown to confluence(atlassian wiki markup).
 
 From:
 
-```markdown
+````markdown
 # Convert markdown to confluence(atlassian wiki markup) for VSCode Extension
 Repository
 [transnano/markdown-to-confluence-vscode](https://github.com/transnano/markdown-to-confluence-vscode)
+
+```sh
+$ echo 'hello'
+hello
 ```
+````
 
 To:
 
@@ -23,6 +28,11 @@ h1. Convert markdown to confluence(atlassian wiki markup) for VSCode Extension
 
 Repository
 [transnano/markdown-to-confluence-vscode|https://github.com/transnano/markdown-to-confluence-vscode]
+
+{code:collapse=false|language=bash|linenumbers=true|theme=Confluence}
+$ echo 'hello'
+hello
+{code}
 ```
 
 ## Command (Usage)
@@ -80,6 +90,6 @@ Ref: [CHANGELOG.md](https://github.com/transnano/markdown-to-confluence-vscode/b
 
 ## Special thanks
 
-[kenchan0130/markdown-to-atlassian-wiki-markup: Convert markdown to atlassian wiki markup - v3.0.6](https://github.com/kenchan0130/markdown-to-atlassian-wiki-markup) that is released under the MIT License, see [LICENSE](https://github.com/kenchan0130/markdown-to-atlassian-wiki-markup/blob/v3.0.6/LICENSE).
+[kenchan0130/markdown-to-atlassian-wiki-markup: Convert markdown to atlassian wiki markup - v4.0.1](https://github.com/kenchan0130/markdown-to-atlassian-wiki-markup/tree/v4.0.1) that is released under the MIT License, see [LICENSE](https://github.com/kenchan0130/markdown-to-atlassian-wiki-markup/blob/v4.0.1/LICENSE).
 
-forked it and extend checkbox for list-item.
+~~forked it and extend checkbox for list-item.~~

@@ -23,48 +23,7 @@
  */
 import "ts-polyfill/lib/es2019-array"; // It will be removed when node 10 is stopped supporting (become EOL).
 
-type SupportLanguage = {
-  ActionScript: "actionscript";
-  Ada: "ada";
-  AppleScript: "applescript";
-  Bash: "bash";
-  C: "c";
-  CSharp: "c#";
-  CPlusPlus: "c++";
-  CSS: "css";
-  Erlang: "erlang";
-  Go: "go";
-  Groovy: "groovy";
-  Haskell: "haskell";
-  HTML: "html";
-  Java: "java";
-  JavaScript: "javascript";
-  JSON: "json";
-  Lua: "lua";
-  Nyan: "nyan";
-  ObjectiveC: "objc";
-  Perl: "perl";
-  PHP: "php";
-  PowerShell: "powershell";
-  Python: "python";
-  R: "r";
-  Ruby: "ruby";
-  Sass: "sass";
-  Scala: "scala";
-  SQL: "sql";
-  Swift: "swift";
-  VisualBasic: "visualbasic";
-  XML: "xml";
-  YAML: "yaml";
-};
-
-type SupportLanguageValues = SupportLanguage[keyof SupportLanguage];
-
-type AtlassianSupportLanguage = SupportLanguage & { None: "none" };
-export type AtlassianSupportLanguageValues = AtlassianSupportLanguage[keyof AtlassianSupportLanguage];
-
-// See also: https://confluence.atlassian.com/doc/code-block-macro-139390.html, https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=advanced
-export const AtlassianSupportLanguage: AtlassianSupportLanguage = {
+const SupportLanguage = {
   ActionScript: "actionscript",
   Ada: "ada",
   AppleScript: "applescript",
@@ -82,7 +41,6 @@ export const AtlassianSupportLanguage: AtlassianSupportLanguage = {
   JavaScript: "javascript",
   JSON: "json",
   Lua: "lua",
-  None: "none",
   Nyan: "nyan",
   ObjectiveC: "objc",
   Perl: "perl",
@@ -98,10 +56,21 @@ export const AtlassianSupportLanguage: AtlassianSupportLanguage = {
   VisualBasic: "visualbasic",
   XML: "xml",
   YAML: "yaml",
-};
+} as const;
+type SupportLanguage = typeof SupportLanguage[keyof typeof SupportLanguage];
+
+/**
+ * See also: https://confluence.atlassian.com/doc/code-block-macro-139390.html
+ *           https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=advanced
+ */
+export const AtlassianSupportLanguage = {
+  None: "none",
+  ...SupportLanguage,
+} as const;
+export type AtlassianSupportLanguage = typeof AtlassianSupportLanguage[keyof typeof AtlassianSupportLanguage];
 
 type GitHubFlaveredMarkdownCodeBlockLanguageMapping = {
-  [P in keyof SupportLanguage]: string[];
+  [P in keyof typeof SupportLanguage]: string[];
 };
 
 // See also: https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
@@ -294,7 +263,7 @@ export const GitHubFlaveredMarkdownCodeBlockLanguageMapping: GitHubFlaveredMarkd
 
 export const markdownToWikiMarkupLanguageMapping: Map<
   string,
-  SupportLanguageValues
+  SupportLanguage
 > = new Map(
   Object.entries(GitHubFlaveredMarkdownCodeBlockLanguageMapping).flatMap(
     ([key, langs]) => {

@@ -21,11 +21,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-import {
-  AtlassianSupportLanguageValues,
-  CodeBlockTheme,
-  markdownToAtlassianWikiMarkup,
-} from "./index";
+import { AtlassianSupportLanguage } from "./language";
+import { CodeBlockTheme, markdownToAtlassianWikiMarkup } from "./index";
 
 describe("markdownToAtlassianWikiMarkup", () => {
   const paragraphNewLinesAtTail = "\n\n";
@@ -291,8 +288,8 @@ ___`;
       const markdown = `- [ ] This is checkbox without checked
 - [x] This is checkbox with checked`;
       const expected = `
-* <input type="checkbox" disabled=""> This is checkbox without checked
-* <input type="checkbox" disabled="" checked=""> This is checkbox with checked
+* This is checkbox without checked
+* This is checkbox with checked
 
 `;
       const rendered = markdownToAtlassianWikiMarkup(markdown);
@@ -478,7 +475,7 @@ helloWorld();
         codeBlock: {
           showLineNumbers: (
             _code: string,
-            _lang: AtlassianSupportLanguageValues
+            _lang: AtlassianSupportLanguage
           ): boolean => true,
         },
       };
@@ -528,10 +525,8 @@ helloWorld();
     it("should use specified code block used collapse or not with function", () => {
       const options = {
         codeBlock: {
-          collapse: (
-            _code: string,
-            _lang: AtlassianSupportLanguageValues
-          ): boolean => true,
+          collapse: (_code: string, _lang: AtlassianSupportLanguage): boolean =>
+            true,
         },
       };
 
