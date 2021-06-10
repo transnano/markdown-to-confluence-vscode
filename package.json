@@ -27,7 +27,7 @@
     "@types/array-unique": "0.3.0",
     "@types/jest": "26.0.23",
     "@types/node": "14.17.3",
-    "@types/vscode": "1.56.0",
+    "@types/vscode": "1.57.0",
     "@typescript-eslint/eslint-plugin": "4.26.1",
     "@typescript-eslint/parser": "4.26.1",
     "array-unique": "0.3.2",
