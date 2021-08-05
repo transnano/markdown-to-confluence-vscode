@@ -676,10 +676,10 @@
   resolved "https://registry.npmjs.org/@types/stack-utils/-/stack-utils-2.0.0.tgz"
   integrity sha512-RJJrrySY7A8havqpGObOB4W92QXKJo63/jFLLgpvOtsGUqbQZ9Sbgl35KMm1DjC6j7AvmmU2bIno+3IyEaemaw==
 
-"@types/vscode@1.58.1":
-  version "1.58.1"
-  resolved "https://registry.npmjs.org/@types/vscode/-/vscode-1.58.1.tgz"
-  integrity sha512-sa76rDXiSif09he8KoaWWUQxsuBr2+uND0xn1GUbEODkuEjp2p7Rqd3t5qlvklfmAedLFdL7MdnsPa57uzwcOw==
+"@types/vscode@1.59.0":
+  version "1.59.0"
+  resolved "https://registry.npmjs.org/@types/vscode/-/vscode-1.59.0.tgz"
+  integrity sha512-Zg38rusx2nU6gy6QdF7v4iqgxNfxzlBlDhrRCjOiPQp+sfaNrp3f9J6OHIhpGNN1oOAca4+9Hq0+8u3jwzPMlQ==
 
 "@types/yargs-parser@*":
   version "15.0.0"
