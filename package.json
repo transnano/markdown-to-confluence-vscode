@@ -32,7 +32,7 @@
     "@typescript-eslint/parser": "4.33.0",
     "array-unique": "0.3.2",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-jest": "24.7.0",
+    "eslint-plugin-jest": "25.2.2",
     "eslint-plugin-prettier": "4.0.0",
     "eslint": "7.32.0",
     "jest": "27.3.1",
