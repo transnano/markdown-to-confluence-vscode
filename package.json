@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@types/array-unique": "0.3.0",
-    "@types/jest": "28.1.1",
+    "@types/jest": "28.1.2",
     "@types/node": "16.11.41",
     "@types/vscode": "1.68.0",
     "@typescript-eslint/eslint-plugin": "5.28.0",
