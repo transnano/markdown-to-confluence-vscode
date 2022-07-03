@@ -685,10 +685,10 @@
   resolved "https://registry.npmjs.org/@types/marked/-/marked-3.0.0.tgz"
   integrity sha512-vof90OIWT+Tzq3MBRXgV9fsH8PC3WZ4OQg9Qa04vOtP0TcyiNfl7BTonYCmTapHZ5lRZh6ihUYkAy7St1hmk/A==
 
-"@types/node@*", "@types/node@16.11.41":
-  version "16.11.41"
-  resolved "https://registry.npmjs.org/@types/node/-/node-16.11.41.tgz"
-  integrity sha512-mqoYK2TnVjdkGk8qXAVGc/x9nSaTpSrFaGFm43BUH3IdoBV0nta6hYaGmdOvIMlbHJbUEVen3gvwpwovAZKNdQ==
+"@types/node@*", "@types/node@16.11.43":
+  version "16.11.43"
+  resolved "https://registry.npmjs.org/@types/node/-/node-16.11.43.tgz"
+  integrity sha512-GqWykok+3uocgfAJM8imbozrqLnPyTrpFlrryURQlw1EesPUCx5XxTiucWDSFF9/NUEXDuD4bnvHm8xfVGWTpQ==
 
 "@types/prettier@^2.1.5":
   version "2.6.3"
