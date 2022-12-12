@@ -18,7 +18,7 @@ jobs:
       - name: eslint review
         uses: reviewdog/action-eslint@v1
         with:
-          github_token: ${{ secrets.TestAndLintToken }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           eslint_flags: "src/**/*.ts"
       - name: Run eslint
