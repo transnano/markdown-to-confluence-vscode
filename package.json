@@ -1,7 +1,7 @@
 {
   "name": "markdown-to-confluence-vscode",
   "displayName": "Markdown to confluence for VSCode Extension",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "publisher": "t-nano",
   "description": "VScode extension for convert markdown to confluence(atlassian wiki markup)",
   "main": "./out/extension",
@@ -57,7 +57,7 @@
     "wiki"
   ],
   "engines": {
-    "vscode": "^1.56.0"
+    "vscode": "^1.73.1"
   },
   "categories": [
     "Other"
