@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "markdown-to-confluence-vscode" extension will be documented in this file.
 
+## [0.1.5]
+- Update dependencies.
+- Release v0.1.5 :tada:
+
 ## [0.1.4]
 - Update dependencies.
 - Release v0.1.4 :tada:
