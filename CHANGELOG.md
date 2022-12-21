@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the "markdown-to-confluence-vscode" extension will be documented in this file.
 
+## [0.1.6]
+- [#527](https://github.com/transnano/markdown-to-confluence-vscode/pull/527) feat: add support for newlines replacement by @c4live
+- Release v0.1.6 :tada:
+
 ## [0.1.5]
 - Update dependencies.
 - Release v0.1.5 :tada:
