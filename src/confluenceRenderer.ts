@@ -50,6 +50,7 @@ export type MarkdownToAtlassianWikiMarkupOptions = {
       | boolean
       | ((code: string, lang: AtlassianSupportLanguage) => boolean);
   };
+  replaceNewLinesInParagraphs?: boolean | string;
 };
 
 type ListHeadCharacter = {
@@ -73,6 +74,18 @@ const TableCellTypeCharacter: TableCellTypeCharacter = {
 const confluenceListRegExp = new RegExp(
   `^(${Object.values(ListHeadCharacter).map(escapeStringRegexp).join("|")})`
 );
+
+const replaceSingleNewlineWithSpace = (
+  text: string,
+  rendererOptions: MarkdownToAtlassianWikiMarkupOptions | undefined
+): string => {
+  const replaceNewLinesInParagraphs =
+    rendererOptions?.replaceNewLinesInParagraphs || false;
+  if (replaceNewLinesInParagraphs === false) return text;
+  const replacementText =
+    replaceNewLinesInParagraphs === true ? " " : replaceNewLinesInParagraphs;
+  return text.replace(/((\r)?\n)/g, replacementText).trim();
+};
 
 const unescapeHtmlSpecialCharacteres = (text: string): string => {
   return text.replace(
@@ -121,7 +134,11 @@ export class AtlassianWikiMarkupRenderer extends Renderer {
   }
 
   public paragraph(text: string): string {
-    const unescapedText = unescapeHtmlSpecialCharacteres(text);
+    const replacedText = replaceSingleNewlineWithSpace(
+      text,
+      this.rendererOptions
+    );
+    const unescapedText = unescapeHtmlSpecialCharacteres(replacedText);
     return `${unescapedText}\n\n`;
   }
 

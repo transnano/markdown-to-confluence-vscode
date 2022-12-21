@@ -61,12 +61,17 @@ function getActiveText(): string {
       true
     );
     const collapse: boolean = myConfig.get("codeBlock.collapse", false);
+    const replaceNewLinesInParagraphs: boolean = myConfig.get("replaceNewLinesInParagraphs", false);
+    const replaceNewLinesInParagraphsWithString: string = myConfig.get("replaceNewLinesInParagraphsWithString", "");
     const options: MarkdownToAtlassianWikiMarkupOptions = {
       codeBlock: {
         theme: theme,
         showLineNumbers: showLineNumbers,
         collapse: collapse,
       },
+      replaceNewLinesInParagraphs: replaceNewLinesInParagraphs ? 
+        (!replaceNewLinesInParagraphsWithString ? true : replaceNewLinesInParagraphsWithString) :
+        false
     };
     const wikiMarkup = markdownToAtlassianWikiMarkup(content, options);
 

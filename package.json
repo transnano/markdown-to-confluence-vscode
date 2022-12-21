@@ -108,6 +108,16 @@
           "type": "boolean",
           "default": false,
           "description": "If selected, the code macro's content will be collapsed upon visiting or refreshing the Confluence page"
+        },
+        "md2confl.replaceNewLinesInParagraphs": {
+          "type": "boolean",
+          "default": false,
+          "description": "If selected, newline characters (\\n or \\r\\n) will be replaced by spaces or by a string"
+        },
+        "md2confl.replaceNewLinesInParagraphsWithString": {
+          "type": "string",
+          "default": "",
+          "description": "String to be used to replace newline characters inside paragraph"
         }
       }
     }
