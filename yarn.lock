@@ -705,10 +705,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@29.4.0":
-  version "29.4.0"
-  resolved "https://registry.npmjs.org/@types/jest/-/jest-29.4.0.tgz"
-  integrity sha512-VaywcGQ9tPorCX/Jkkni7RWGFfI11whqzs8dvxF41P17Z+z872thvEvlIbznjPJ02kl1HMX3LmLOonsj2n7HeQ==
+"@types/jest@29.5.0":
+  version "29.5.0"
+  resolved "https://registry.npmjs.org/@types/jest/-/jest-29.5.0.tgz"
+  integrity sha512-3Emr5VOl/aoBwnWcH/EFQvlSAmjV+XtV9GGu5mwdYew5vhQh0IUZx/60x0TzHDu09Bi7HMx10t/namdJw5QIcg==
   dependencies:
     expect "^29.0.0"
     pretty-format "^29.0.0"
@@ -718,9 +718,9 @@
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.9.tgz"
   integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
 
-"@types/marked@^3.0.3":
+"@types/marked@^3.0.0":
   version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-3.0.3.tgz#37878f405d5f0cff0e6128cea330bd0aa8df8cb3"
+  resolved "https://registry.npmjs.org/@types/marked/-/marked-3.0.3.tgz"
   integrity sha512-ZgAr847Wl68W+B0sWH7F4fDPxTzerLnRuUXjUpp1n4NjGSs8hgPAjAp7NQIXblG34MXTrf5wWkAK8PVJ2LIlVg==
 
 "@types/node@*", "@types/node@18.15.3":
