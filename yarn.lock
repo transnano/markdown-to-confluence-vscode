@@ -723,10 +723,10 @@
   resolved "https://registry.npmjs.org/@types/marked/-/marked-3.0.3.tgz"
   integrity sha512-ZgAr847Wl68W+B0sWH7F4fDPxTzerLnRuUXjUpp1n4NjGSs8hgPAjAp7NQIXblG34MXTrf5wWkAK8PVJ2LIlVg==
 
-"@types/node@*", "@types/node@18.16.3":
-  version "18.16.3"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.16.3.tgz"
-  integrity sha512-OPs5WnnT1xkCBiuQrZA4+YAV4HEJejmHneyraIaxsbev5yCEr6KMwINNFP9wQeFIw8FWcoTqF3vQsa5CDaI+8Q==
+"@types/node@*", "@types/node@18.16.9":
+  version "18.16.9"
+  resolved "https://registry.npmjs.org/@types/node/-/node-18.16.9.tgz"
+  integrity sha512-IeB32oIV4oGArLrd7znD2rkHQ6EDCM+2Sr76dJnrHwv9OHBTTM6nuDLK9bmikXzPa0ZlWMWtRGo/Uw4mrzQedA==
 
 "@types/prettier@^2.1.5":
   version "2.7.2"
