@@ -752,10 +752,10 @@
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.12.tgz"
   integrity sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==
 
-"@types/marked@^3.0.0":
-  version "3.0.3"
-  resolved "https://registry.npmjs.org/@types/marked/-/marked-3.0.3.tgz"
-  integrity sha512-ZgAr847Wl68W+B0sWH7F4fDPxTzerLnRuUXjUpp1n4NjGSs8hgPAjAp7NQIXblG34MXTrf5wWkAK8PVJ2LIlVg==
+"@types/marked@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-3.0.4.tgz#cae501102a540ba1b77e57d0ee3e3d4dab70d08b"
+  integrity sha512-fzrd0O45A0hZl3+Fs3+BcuD3SF+kEkV0KHBXrSPi1B73PnDJI9wcUkpA8JoujFKqgyOijeKgIllFYsgJFhNB5g==
 
 "@types/node@*", "@types/node@18.18.0":
   version "18.18.0"
