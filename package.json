@@ -57,7 +57,7 @@
     "wiki"
   ],
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^2023.0.0"
   },
   "categories": [
     "Other"
