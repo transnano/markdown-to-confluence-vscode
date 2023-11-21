@@ -670,10 +670,10 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@types/array-unique@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/@types/array-unique/-/array-unique-0.3.2.tgz"
-  integrity sha512-WDcj6fizwqvHZUBPcotfwkHTQe9HUMIfrIN+CF47LUwS1uD/5E5MZFMCa7+nyl3z8YLl7M+E7XNEuXNe/u0wXA==
+"@types/array-unique@0.3.3":
+  version "0.3.3"
+  resolved "https://registry.npmjs.org/@types/array-unique/-/array-unique-0.3.3.tgz"
+  integrity sha512-mUcCcLe38ZufL2rpFyHXkuYkjrEiOcJQL0sHT1ZHX3WuiTuZ8fCedArCsk3YjMET/cardDYfx/SCoK813bcYgA==
 
 "@types/babel__core@^7.1.14":
   version "7.20.1"
