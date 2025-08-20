@@ -39,7 +39,7 @@
     "npm-run-all2": "6.2.6",
     "prettier": "3.6.2",
     "rimraf": "5.0.10",
-    "ts-jest": "29.4.0",
+    "ts-jest": "29.4.1",
     "typescript": "5.8.3"
   },
   "jest": {
