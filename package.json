@@ -40,7 +40,7 @@
     "prettier": "3.6.2",
     "rimraf": "5.0.10",
     "ts-jest": "29.4.1",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "jest": {
     "preset": "ts-jest"
